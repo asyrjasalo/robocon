@@ -1,0 +1,2 @@
+RESTInstance==1.0.0b4
+robotframework-faker

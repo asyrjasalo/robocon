@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+if ! which mdp >/dev/null ; then
+  if ! which brew >/dev/null ; then
+    echo "Please install `mdp` (https://github.com/visit1985/mdp) to view this."
+    exit 1
+  fi
+  brew install mdp
+fi
+
+mdp --noslidenum presentation.md
